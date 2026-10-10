@@ -16,6 +16,4 @@
         $ticket = 65;
     }
     echo"The ticket is: {$ticket}";
-
-
 ?>
