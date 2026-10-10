@@ -14,6 +14,7 @@
 </body>
 </html>
 <?php
+    //math functions
    $y = $_POST["Radius"];
 
    $circumfrence = round(2 * pi() * $y);
