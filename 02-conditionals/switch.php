@@ -1,4 +1,5 @@
 <?php
+//shorter code is written compared to else if statements
     $date = ("June");
 
     switch ($date) {
