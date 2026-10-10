@@ -1,15 +1,32 @@
-<!-- Example one -->
+
 <?php
-    $detergent = 49.99;
-    $soap = 30.50;
-    $bucket = 29.99;
-    $cup = 50.00;
+//arithmetic operators
+   $x = 25;
+   $y = 5;
+   $z = null;
 
-    $total = null;
-    
-    $total = $detergent + $soap + $cup + $bucket;
+    // $z = $x + $y;
+    // $z = $x - $y;
+    // $z = $x * $y;
+    // $z = $x / $y;
+    // $z = $x ** $y;
+    // $z = $x % $y;
 
-    echo "Receipt: \$ $total";
 
+    echo $z;
+    //increment / decrement operators
 
+    $day = 12;
+    $day++;
+
+    echo $day;
+
+    //operator precedence
+    //()
+    //** 
+    //* / %
+    //+ -
+
+    $score = (519 ** 2 - 1957) * 9 + 3 % 7;
+    echo $score;
 ?>
