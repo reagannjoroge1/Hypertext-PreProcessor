@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>validate</title>
+    <title>Sanitize</title>
 </head>
 <body>
-    <form action="validate.php" method="post">
-        <label>username: </label><br>
-        <input type="text" name="username"><br>
-         <label>age: </label><br>
-        <input type="text" name="age"><br>
-         <label>email: </label><br>
+    <form method="post" action="validate.php">
+        email:<br>
         <input type="text" name="email"><br>
-        <br>
+        age:<br>
+        <input type="text" name="age"><br><br>
 
-        <input type="submit" name="login" value="login">
+        <input type="submit" name="login"
+                  value="login">
+
     </form>
-    
 </body>
 </html>
-<?php 
+<?php
     if(isset($_POST["login"])){
-        $username = filter_input(INPUT_POST,"username",
-                     FILTER_SANITIZE_SPECIAL_CHARS);
-        echo"{$username}";
+        $email = filter_input(INPUT_POST,"email",
+             FILTER_VALIDATE_EMAIL);
+
         $age = filter_input(INPUT_POST,"age",
-                     FILTER_SANITIZE_NUMBER_INT);
-        echo"<br>You are {$age} years old!";
-        $email = filter_input(INPUT_POST, "email",
-                        FILTER_SANITIZE_EMAIL);
-        echo"<br>Your email is: {$email}";
-    }
+             FILTER_VALIDATE_INT);
+
+        if(empty($email)){
+            echo"<br>Invalid email";
+        }
+        else{
+            echo"<br> Your email is: {$email}";
+        }
+}
+
+
 ?>
