@@ -9,12 +9,13 @@
     // echo $fname;
     // echo strrev($fname);
     echo str_shuffle($fname);
-    echo strtolower($fname);
-    echo strtolower($fname);
-    echo strtolower($fname);
-    echo strtolower($fname);
-    echo strtolower($fname);
-    echo strtolower($fname);
+    // echo strcmp($fname);*
+    // echo strlen($fname);*
+    // echo strpos($fname);*
+    // echo substr($fname);*
+    // echo explode($fname);*
+    // echo replace($fname);*
+    // echo implode($fname);*
 
 
 ?>
