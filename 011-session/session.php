@@ -33,6 +33,6 @@
         
         else{
             echo"<br>The username/password is blank";
-        }  
+        } 
     }
 ?>
