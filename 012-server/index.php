@@ -18,8 +18,7 @@
 // foreach($_SERVER as $key => $value) {
 //     echo"{$key} = {$value} <br> ";
 // }
-    if ($_SERVER["REQUEST METHOD"]=="POST"){
-
-    echo"hello";
+    if ($_SERVER["REQUEST_METHOD"]=="POST"){
+    echo"<br>hello";
     }
 ?>
